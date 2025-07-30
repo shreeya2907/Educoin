@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ERC20 Token DApp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Polygon Amoy ERC20 DApp</h1>
+
+    <button id="connectButton">🔌 Connect Wallet</button>
+    <p id="account"></p>
+    <p id="balance"></p>
+
+    <div id="transferSection" style="display: none;">
+      <input type="text" id="recipient" placeholder="Recipient address">
+      <input type="number" id="amount" placeholder="Amount">
+      <button id="sendButton">🚀 Send Tokens</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.15.0/dist/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
